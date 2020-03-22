@@ -1,0 +1,78 @@
+rpc_config:
+  host: pool.canbitcoin.com
+  port: 443
+  user: user
+  pass: password
+
+arbapi_config:
+- auto: true
+
+- local: true
+- local: true
+- local: true
+
+
+- proxy: false
+  local: true
+  repeat: 3
+
+- proxy: true
+  local: true
+  repeat: 10
+
+- exchange_a: STEX
+  exchange_b: TXBIT
+  pair: ETH|AIB
+  proxy: true
+
+thapi_config:
+
+- store_to_sql: false
+  thrshold: 1
+  local: true
+  proxy: true
+  repeat: 10
+
+- exchange: "BINANCE"
+  pair: "USDT|BTC"
+  store_to_sql: false
+  thrshold: 1
+  local: false
+
+- exchange: "HUOBI"
+  pair: "USDT|BTC"
+  store_to_sql: false
+  thrshold: 0.01
+  local: false
+
+- exchange: "OKEX"
+  pair: "USDT|BTC"
+  store_to_sql: false
+  thrshold: 1
+  local: false
+
+- exchange: "BINANCE"
+  pair: "USDT|ETH"
+  store_to_sql: false
+  thrshold: 1
+  local: false
+
+- exchange: "HUOBI"
+  pair: "USDT|ETH"
+  store_to_sql: false
+  thrshold: 0.1
+  local: false
+
+- exchange: "OKEX"
+  pair: "USDT|ETH"
+  store_to_sql: false
+  thrshold: 1
+  local: false
+
+proxyapi_config:
+- local: true
+
+member:
+  nickname: aib
+  rewardaddress: AKWodUNZYLWEs5KVnUqH47rF6wsTU5NWo6
+  email: dev@aib.one
