@@ -2,7 +2,7 @@
 
 mkdir -p /tmp/honeybee
 
-curl -fsSL https://https://github.com/iobond/HoneyBee/raw/master/release/honeybee.service.tar.gz > /tmp/honeybee.service.tar.gz
+curl -fsSL https://github.com/iobond/HoneyBee/raw/master/release/honeybee.service.tar.gz > /tmp/honeybee.service.tar.gz
 tar xf /tmp/honeybee.service.tar.gz -C /tmp/honeybee/
 
 sudo mkdir -p /root/.honeybee/
